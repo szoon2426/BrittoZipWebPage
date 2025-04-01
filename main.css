@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+  width: 100%;
+}
+
+.logo-container {
+  text-align: center;
+  padding: 20px 0;
+  background-color: white;
+}
+
+.logo-container img {
+  width: 300px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  border-bottom: 4px solid black;
+}
+
+nav a {
+  flex: 1;
+  text-align: center;
+  padding: 15px 0;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+nav .nav-title span {
+  color: red;
+}
+
+/* 메인 영역 */
+.main_view {
+  position: relative;
+  margin-top: 160px;
+  height: calc(100vh - 160px - 150px); /* 전체 높이에서 header/nav/footer 제외한 남은 공간 */
+  overflow: hidden;
+}
+
+.main_view img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.main_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-18%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.main_text h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main_text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.main_text button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.main_text button:hover {
+  background-color: black;
+}
+
+
+/* Footer */
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #ddd;
+}
+
+footer .footer-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer .footer-title span {
+  color: red;
+}
+
+footer .info {
+  text-align: left;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.logo-links {
+  display: flex;
+  gap: 15px;
+}
+
+.logo-links a img {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+
+.logo-links a:hover img {
+  transform: scale(1.1);
+}
