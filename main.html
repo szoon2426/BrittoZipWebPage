@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>BURRITO ZIP</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: white;
+      width: 100%;
+    }
+
+    .logo-container {
+      text-align: center;
+      padding: 20px 0;
+      background-color: white;
+    }
+
+    .logo-container img {
+      width: 300px;
+      height: auto;
+    }
+
+    nav {
+      display: flex;
+      width: 100%;
+      background-color: white;
+      border-bottom: 4px solid black;
+    }
+
+    nav a {
+      flex: 1;
+      text-align: center;
+      padding: 15px 0;
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+
+    nav a:hover {
+      color: red;
+      transform: scale(1.1);
+    }
+
+    nav .nav-title span {
+      color: red;
+    }
+    
+    /* 메인 영역 */
+    .main_view {
+      position: relative;
+      margin-top: 160px;
+      height: calc(100vh - 160px - 150px); /* 전체 높이에서 header/nav/footer 제외한 남은 공간 */
+      overflow: hidden;
+    }
+
+    .main_view img {
+      width: 100vw;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+      display: block;
+    }
+
+    .main_text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-18%, -50%);
+      color: white;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 80%;
+    }
+
+    .main_text h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .main_text p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .main_text button {
+      font-size: 18px;
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .main_text button:hover {
+      background-color: black;
+    }
+
+
+    /* Footer */
+    footer {
+      background-color: white;
+      text-align: center;
+      padding: 30px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 2px solid #ddd;
+    }
+
+    footer .footer-title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    footer .footer-title span {
+      color: red;
+    }
+
+    footer .info {
+      text-align: left;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 18px;
+    }
+
+    .logo-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .logo-links a img {
+      width: 100px;
+      height: 100px;
+      transition: transform 0.3s ease;
+    }
+
+    .logo-links a:hover img {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#">
+      <div class="logo-container">
+        <img src="로고/BURRITO ZIP.png" alt="BURRITO ZIP Logo">
+      </div>
+    </a>
+    <nav>
+      <a href="#">메뉴</a>
+      <a href="about.html" class="nav-title">BURRITO <span>ZIP</span></a>
+      <a href="#">주문</a>
+      <a href="#">고객문의</a>
+    </nav>
+  </header>
+
+  <div class="main_view">
+    <img src="main_britto.png" alt="부리또">
+    <div class="main_text">
+      <h1>정통 멕시칸 스타일을 기반으로 한 신선하고 든든한 한 끼를 제공합니다.</h1>
+      <p>부드러운 또르띠야 안에 각종 신선한 채소와 매콤한 소스, 육즙 가득한 고기 또는 담백한 채식 재료를 가득 채워 한 입 베어물면 멕시코의 향기가 입안에 퍼집니다.</p>
+      <button>주문하기</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="info">
+      <div class="footer-title">BURRITO <span>ZIP</span></div>
+      <p>주소: 서울 동작구 상도로21길 23</p>
+      <p>연락처: 02-3280-0090</p>
+      <p>영업시간: 10:00 - 19:30</p>
+      <p>COPYRIGHT © 2025 ALL RIGHTS RESERVED BY BURRITO ZIP.</p>
+    </div>
+    <div class="logo-links">
+      <a href="https://naver.me/G1wS9wGq" target="_blank">
+        <img src="로고/NAVER.png" alt="Naver Logo">
+      </a>
+      <a href="https://www.diningcode.com/profile.php?rid=UYu9bTveLzbd" target="_blank">
+        <img src="로고/diningcode.jpg" alt="DiningCode Logo">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
