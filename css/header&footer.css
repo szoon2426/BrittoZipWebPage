@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -9,9 +5,9 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+/* 헤더 */
 header {
-  position: fixed;
+  position: fixed;    /*헤더를 상단에 고정*/
   top: 0;
   left: 0;
   right: 0;
@@ -31,6 +27,7 @@ header {
   height: auto;
 }
 
+/* 네비게이션 바 */
 nav {
   display: flex;
   width: 100%;
@@ -58,65 +55,11 @@ nav .nav-title span {
   color: red;
 }
 
-/* 메인 영역 */
-.main_view {
-  position: relative;
-  margin-top: 160px;
-  height: calc(100vh - 160px - 150px); /* 전체 높이에서 header/nav/footer 제외한 남은 공간 */
-  overflow: hidden;
-}
-
-.main_view img {
-  width: 100vw;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-}
-
-.main_text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-18%, -50%);
-  color: white;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 80%;
-}
-
-.main_text h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.main_text p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.main_text button {
-  font-size: 18px;
-  padding: 10px 20px;
-  background-color: red;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.main_text button:hover {
-  background-color: black;
-}
-
-
 /* Footer */
 footer {
   background-color: white;
   text-align: center;
-  padding: 30px 50px;
+  padding: 18px 40px;   /* 위아래 좌우 */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -124,9 +67,9 @@ footer {
 }
 
 footer .footer-title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 footer .footer-title span {
@@ -138,18 +81,18 @@ footer .info {
 }
 
 footer p {
-  margin: 5px 0;
-  font-size: 18px;
+  margin: 1px 0;
+  font-size: 11 px;
 }
 
 .logo-links {
   display: flex;
-  gap: 15px;
+  gap: 12px;
 }
 
 .logo-links a img {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   transition: transform 0.3s ease;
 }
 

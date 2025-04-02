@@ -1,0 +1,90 @@
+ol{
+  list-style-type: none;
+}
+ol{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/*메뉴소개*/
+#menuintro{
+  text-align: center;
+  color: #212121;
+  font-size: 30px;
+  margin-top: 160px;
+  letter-spacing: 0%;
+}
+/*리스트에 적용되는 폰트 성질*/
+.listfont{
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 100%;
+  margin-left: 50px;
+  letter-spacing: 0%;
+  margin-top: 30px;
+ }
+/*메뉴 컨테이너*/
+.menu-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 110px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/*메뉴 이미지 성질*/
+.menu-container img{
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  width: 250px;
+  height: 230px;
+  /* border-bottom: 2px solid black; */
+} 
+/*전체 이미지에 적용시 여백이 남는 이미지가 발생하여 sidemenu에만 비율 조정 적용*/
+#sidemenu img{
+  object-fit: contain;
+}
+/*각 메뉴마다의 공간*/
+.menu-container > div{
+  /* border: 2px solid black; */
+  border-radius: 16px;
+}
+/*메뉴 이름 폰트 성질*/
+.menuname{
+  position: inherit;
+  top:50%;
+  left:50%;
+  transform: translate(0%, -35%);
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #424242;
+}
+
+/*가격 div공간*/
+.price{
+  position:inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -70%);
+
+  background-color: #F1722833;
+  color: #F17228;
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*가격 폰트 성질*/
+.price p{
+  font-size: 18px;
+  font-weight: bold;
+}
