@@ -1,0 +1,39 @@
+/* ===== Contact Page ===== */
+.contact-page .submit_container {
+  margin-top: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-page .name_input {
+  text-align: left;
+}
+
+.contact-page .input_name,
+.contact-page .input_phoneNum,
+.contact-page .input_email,
+.contact-page .input_email_domain,
+.contact-page .input_title {
+  width: 100%;
+  height: 25px;
+}
+
+.contact-page .input_email {
+  width: 332px;
+}
+
+.contact-page .input_email_domain {
+  width: 299px;
+}
+
+.contact-page .input_content {
+  vertical-align: top;
+  width: 100%;
+  height: 503px;
+  letter-spacing: 1.5px;
+}
+
+.contact-page .submit_button_design {
+  width: 1000px;
+}

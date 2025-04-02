@@ -1,0 +1,68 @@
+.about-page main {
+  background-image: url('../로고/BackGround.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-page .flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.about-page .image-container {
+  flex: 1;
+  max-width: 500px;
+  margin-top: 100px;
+}
+
+.about-page .image-container img {
+  border-radius: 30px;
+  border: 6px solid red;
+  width: 100%;
+  height: auto;
+}
+
+.about-page h2 {
+  margin-top: 100px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about-page h2 span,
+.about-page h3 span {
+  color: red;
+}
+
+.about-page h3 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.about-page .text-content {
+  flex: 1;
+  max-width: 500px;
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.8;
+  color: black;
+  text-align: left;
+}
+
+.about-page .text-content p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.about-page .highlight {
+  font-weight: bold;
+  color: red;
+}

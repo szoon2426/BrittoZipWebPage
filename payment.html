@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>brittoZip</title>
-    <link rel = "stylesheet" href="css/order.css">
+    <link rel = "stylesheet" href="css/payment.css">
     <link rel="stylesheet" href="css/header&footer.css">
   </head>
   <body>
@@ -21,36 +21,18 @@
         </nav>
     </header>
         <!--메뉴소개-->
-        <div id="menuintro"><b>세트 선택</b></div>
-        <div id="menu">
-            <div id="setmenu"><!--세트메뉴 -->
-                <div class="menu-container">
-                    <div><!--단품메뉴-->
-                        <img src="메뉴/단품.png">
-                        <p class="menuname">단품 부리또</p>
-                        <div class="price">
-                            <p>3,500</p>
-                        </div>
-                        <button class = "select" type = "button" onclick="location.href='order_meat.html'">선택하기</button>
-                    </div>
-                    <div><!--음료 세트-->
-                        <img src="메뉴/음료세트.png">
-                        <p class="menuname">음료세트</p>
-                        <div class="price">
-                            <p>4,200</p>
-                        </div>
-                        <button class = "select" type = "button" onclick="location.href='order_meat.html'">선택하기</button>
-                    </div>
-                    <div><!--튀김세트-->
-                        <img src="메뉴/음료 후라이 세트.png">
-                        <p class="menuname">튀김세트
-                        </p>
-                        <div class="price">
-                            <p>6,000</p>
-                        </div>
-                        <button class = "select" type = "button" onclick="location.href='order_meat.html'">선택하기</button>
-                    </div>
+        <div id="payintro">
+          <b>결제</b>
+          <button class = "home" type="button" onclick="location.href = 'order_set.html'">처음으로</button>
+        </div>
+        <div id="payment-container">
+            <div id = "payment">
+                <img src="메뉴/음료세트.png">
+                <p class="menuname">음료세트 X 닭고기 X 양파튀김</p>
+                <div class="price">
+                    <p>6,200원</p>
                 </div>
+                <button class = "select" type = "button" onclick="location.href='main.html'">결제하기</button>
             </div>
         </div>
         <footer>
