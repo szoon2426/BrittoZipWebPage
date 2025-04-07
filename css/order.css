@@ -1,11 +1,5 @@
-ol {
-  list-style-type: none;
-  padding-left: 0;
-}
-
 /* 메뉴 소개 */
 #menuintro {
-  /* position: relative; ← 제거! */
   margin-top: 160px;
   text-align: center;
 }
@@ -17,12 +11,38 @@ ol {
   display: inline-block;
 }
 
+/* 위젯 전체 섹션 */
+.widget-section {
+  margin-top: 20px;
+}
+
+/* 위젯 컨테이너: 메뉴 컨테이너와 동일한 설정 */
+.widget-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px 110px; /* 메뉴와 동일한 간격 */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 위젯 슬롯: 메뉴 항목과 같은 박스 역할 */
+.widget-slot {
+  width: 250px; /* 메뉴 이미지 크기와 동일 */
+  height: 60px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* 실제 위젯 */
+.widget {
+  display: flex;
+  gap: 20px;
+}
+
 /* 뒤로가기 버튼 (페이지 기준 위치) */
 .back {
-  position: absolute;
-  top: 32%;
-  transform: translateY(-50%);
-  left: 18.5%;
   width: 115px;
   height: 40px;
   font-size: 20px;
@@ -44,10 +64,6 @@ ol {
 .shopping_list {
   width: 45px;
   height: 45px;
-  position: absolute;
-  top: 32%;
-  transform: translateY(-50%);
-  left: 27%;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -65,7 +81,7 @@ ol {
   gap: 50px 110px;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 0px;
 }
 
 /* 메뉴 이미지 성질 */

@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>brittoZip</title>
+    <title>BURRITO ZIP</title>
     <link rel = "stylesheet" href="css/order.css">
     <link rel="stylesheet" href="css/header&footer.css">
   </head>
@@ -21,12 +22,25 @@
         </nav>
     </header>
         <!--메뉴소개-->
-        <button class = "back" type="button" onclick="location.href = 'order_set.html'">뒤로가기</button>
-        <a href = 'payment.html'>
-            <img class = "shopping_list" src = "로고/cart.png" alt = "장바구니">
-        </a>
         <div id="menuintro">
-            <b>고기선택</b>
+            <b>고기 선택</b>
+        </div>
+        <div class="widget-section">
+            <div class="widget-container">
+                <!-- 1번 슬롯 (왼쪽) -->
+                <div class="widget-slot">
+                <div class="widget">
+                    <button class="back" type="button" onclick="location.href = 'order_set.html'">뒤로가기</button>
+                    <a href='payment.html'>
+                    <img class="shopping_list" src="로고/cart.png" alt="장바구니">
+                    </a>
+                </div>
+                </div>
+                <!-- 2번 슬롯 (중앙) -->
+                <div class="widget-slot"></div>
+                <!-- 3번 슬롯 (오른쪽) -->
+                <div class="widget-slot"></div>
+            </div>
         </div>
         <div id="menu">
             <div id="meatchoice"><!--고기선택-->
