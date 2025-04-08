@@ -4,35 +4,54 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: 60px 20px;
+  text-align: left; /* 가운데 정렬에서 좌측 정렬로 변경 */
+}
+
+.page-intro {
   text-align: center;
+  margin-top: 100px;
+}
+
+.page-intro h1 {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.page-intro .highlight {
+  color: red;
 }
 
 .about-page .flex-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 100px;
-  margin: 40px auto;
+  align-items: center; /* 텍스트와 이미지 수직 중앙 정렬 */
+  gap: 110px;
+  margin: 0px auto 40px;
   max-width: 1200px;
 }
 
 .about-page .image-container {
-  flex: 1;
-  max-width: 500px;
-  margin-top: 100px;
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px; /* 살짝 아래로 내림 */
 }
 
+
 .about-page .image-container img {
+  width: 120%;
+  max-width: 600px;
+  height: 600px;
   border-radius: 30px;
   border: 6px solid red;
-  width: 100%;
-  height: auto;
 }
 
 .about-page h2 {
-  margin-top: 100px;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
+  text-align: left; /* 좌측 정렬로 변경 */
 }
 
 .about-page h2 span,
@@ -41,28 +60,64 @@
 }
 
 .about-page h3 {
-  font-size: 14px;
-  margin-bottom: 20px;
-  text-align: center;
+  font-size: 22px;
+  text-align: left;
   font-weight: bold;
 }
 
 .about-page .text-content {
-  flex: 1;
-  max-width: 500px;
-  margin: 0;
-  font-size: 11px;
+  flex: 1.8;
+  max-width: 700px;
+  font-size: 15px;
   line-height: 1.8;
   color: black;
-  text-align: left;
+  background-color: rgba(255, 255, 0, 0); /* 노란 배경은 이미지에 있으므로 투명 */
+  padding: 0px;
+  border-radius: 0;
+  box-shadow: none; /* 그림자 제거 */
 }
 
 .about-page .text-content p {
-  margin: 10px 0;
   font-weight: bold;
 }
 
 .about-page .highlight {
   font-weight: bold;
   color: red;
+}
+
+/* 제휴 정보 및 호버 이미지 효과는 유지 */
+.partnership-info {
+  position: relative;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.partnership-info:hover {
+  color: darkred;
+}
+
+.hint-text {
+  font-size: 12px;
+  color: gray;
+  margin-left: 5px;
+}
+
+.partnership-info img {
+  display: none;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 100;
+  transition: opacity 0.3s ease;
+}
+
+.partnership-info:hover img {
+  display: block;
 }
