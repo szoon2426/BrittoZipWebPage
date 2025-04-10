@@ -18,7 +18,7 @@
 }
 
 .contact-page .input_name{
-  width: 100%;
+  width: 96%;
   height: 25px;
   padding: 10px;
   border: 2px solid #ccc;
@@ -28,7 +28,7 @@
 }
 
 .contact-page .input_phoneNum{
-  width: 100%;
+  width: 96%;
   height: 25px;
   padding: 10px;
   border: 2px solid #ccc;
@@ -45,7 +45,7 @@
 }
 .contact-page .input_email,
 .contact-page .input_email_domain{
-  width: 239px;
+  width:35%;
   height: 25px;
   padding: 10px;
   border: 2px solid #ccc;
@@ -53,9 +53,11 @@
   outline: none;
   font-size: 16px;
 }
-
+.contact-page .separator{
+  width:0%;
+}
 .contact-page .email_select {
-  width: 120px;
+  width: 18%;
   height: 45px;
   padding: 10px;
   font-size: 18px;
@@ -69,7 +71,7 @@
 }
 
 .contact-page .input_title{
-  width: 100%;
+  width: 96%;
   height: 25px;
   padding: 10px;
   border: 2px solid #ccc;
@@ -80,7 +82,7 @@
 
 .contact-page .input_content {
   vertical-align: top;
-  width: 100%;
+  width: 96%;
   height: 503px;
   letter-spacing: 1.5px;
   padding: 10px;
@@ -88,6 +90,7 @@
   border-radius: 20px;
   outline: none;
   font-size: 16px;
+  resize: none
 }
 
 .contact-page .submit_button_design {
