@@ -25,16 +25,20 @@
         </nav>
     </header>
 
+    <!--문의사항 입력창-->
     <div class="submit_container">
         <table class="input_table">
+            <!--이름 입력-->
             <tr>
                 <th scope="row">이름</th>
                 <td><input type="text" class="input_name" placeholder="이름을 입력해주세요." maxlength="20" /></td>
             </tr>
+            <!--연락처 입력-->
             <tr>
                 <th scope="row">연락처</th>
                 <td><input type="text" class="input_phoneNum" placeholder="연락처를 입력해주세요." maxlength="20" /></td>
             </tr>
+            <!--이메일 입력-->
             <tr>
                 <th scope="row">이메일</th>
                 <td>
@@ -53,28 +57,29 @@
                     </select>
                 </td>
             </tr>
+            <!--제목 작성-->
             <tr>
                 <th scope="row">제목</th>
                 <td><input type="text" class="input_title" placeholder="제목을 입력해주세요." /></td>
             </tr>
+            <!--내용 작성-->
             <tr>
                 <th scope="row" style="vertical-align: top">내용</th>
                 <td><textarea class="input_content" placeholder="내용을 입력하세요"></textarea></td>
             </tr>
+            <!--파일 첨부-->
             <tr>
-                <th scope="row">파일 첨부</th>
-                <td><input type="file" id="file_upload" /></td>
-            </tr>
-            <tr>
-                <th scope="row"></th>
+                <th scope="row" style="vertical-align: top">첨부 파일</th>
                 <td>
-                    <h6>
-                        첨부된 지원 파일 형식: JPG, PNG, PDF 등<br />
-                        최대 파일 크기: 10MB<br />
-                        첨부된 파일은 주문 확인 및 처리를 위해서만 사용되며, 안전하게 보호됩니다.
-                    </h6>
+                    <input type="file" id="file_upload" />
+                    <h5>
+                        첨부된 지원 파일 형식: JPG, PNG, PDF 등 <br />최대 파일 크기: 10MB
+                        <br />첨부된 파일은 주문 확인 및 처리를 위해서만 사용되며,
+                        안전하게 보호됩니다.
+                    </h5>
                 </td>
             </tr>
+            <!--제출 버튼-->
             <tr>
                 <th scope="row"></th>
                 <td>
