@@ -10,7 +10,7 @@
   width: 100%;
   max-width: 800px;
   min-width: 600px;
-  border-spacing: 20px;
+  border-spacing: 10px;
 }
 
 .contact-page .name_input {
@@ -106,6 +106,9 @@
   border-radius: 20px;
   outline: none;
   font-weight: bold;
+}
+.file_intro{
+  margin-top: 10px;
 }
 
 a{
