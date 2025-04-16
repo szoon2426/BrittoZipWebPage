@@ -79,15 +79,49 @@
                     </h6>
                 </td>
             </tr>
+            <!--공개여부-->
+            <tr>
+                <th scope="row">공개 여부</th>
+                <td>
+                    <input id="publicPost" type="radio" name="postRange" value="pubPost">
+                    <label for="publicPost">공개</label>
+                    <input id="privatePost" type="radio" name="postRange" value="priPost">
+                    <label for="privatePost">비공개</label>
+                </td>
+            </tr>
+
+            <!--비공개 시 비밀번호 설정-->
+            <tr id='passwordRow' style="display: none;">
+                <th scope="row">비밀번호</th>
+                <td>
+                    <input type="password" class="input_password" placeholder="비밀번호 4자리를 입력해주세요." maxlength="4"/>
+                </td>
+            </tr>
             <tr>
                 <th scope="row"></th>
                 <td>
                     <div>
-                        <a href="main.html" onclick="alert('접수되었습니다')"><button class="submit_button_design">보내기</button></a>
+                        <a href="main.html"><button class="submit_button_design">보내기</button></a>
                     </div>
                 </td>
             </tr>
         </table>
+        <!--공개/비공개 기능-->
+        <script>
+            const postRadios = document.querySelectorAll('input[name="postRange"]');
+            const passwordRow = document.getElementById('passwordRow');
+
+            postRadios.forEach((radio) => {
+                radio.addEventListener('change',function(){
+                    if(this.value === 'priPost'){
+                        passwordRow.style.display= 'table-row';
+                    }
+                    else{
+                        passwordRow.style.display='none';
+                    }
+                });
+            });
+        </script>
     </div>
 
     <footer>
