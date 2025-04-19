@@ -1,0 +1,8 @@
+.out_of_session{
+  position: relative;
+  margin-top: 160px;
+  height: calc(100vh - 164px - 160px); /* 전체 높이에서 header/nav/footer 제외한 남은 공간 */
+  overflow: hidden;
+  text-align : center;
+  font-size: 60px;
+}

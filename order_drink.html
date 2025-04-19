@@ -23,16 +23,16 @@
     </header>
         <!--메뉴소개-->
         <div id="menuintro">
-            <b>사이드 메뉴 선택</b>
+            <b>음료 선택</b>
         </div>
         <div class="widget-section">
             <div class="widget-container">
                 <!-- 1번 슬롯 (왼쪽) -->
                 <div class="widget-slot">
                 <div class="widget">
-                    <button class="back" type="button" onclick="location.href = 'order_set.html'">뒤로가기</button>
+                    <button id="back">뒤로가기</button>
                     <a href='payment.html'>
-                    <img class="shopping_list" src="로고/cart.png" alt="장바구니">
+                    <img id="shopping_list" src="로고/cart.png" alt="장바구니">
                     </a>
                 </div>
                 </div>
@@ -42,55 +42,57 @@
                 <div class="widget-slot"></div>
             </div>
         </div>
-        <div id="sidemenu"><!--사이드메뉴-->
-            <div class="menu-container">
-                <div><!--감튀-->
-                    <img src="메뉴/frenchfries.png">
-                    <p class="menuname">감자튀김</p>
-                    <div class="price">
-                        <p>+2,000</p>
+        <div id="menu">
+            <div class = "tag" id="drink"><!--음료선택-->
+                <div class="menu-container">
+                    <div>
+                        <img src="메뉴/coke.png">
+                        <p class="menuname">콜라</p>
+                        <div class="price">
+                            <p>+0</p>
+                        </div>
+                        <button class = "select" data-set="coke">선택하기</button>
                     </div>
-                    <button class = "select" type = "button" onclick="location.href='payment.html'">선택하기</button>
-                </div>
-                <div><!--양파튀김-->
-                    <img src="메뉴/onionfreis.png">
-                    <p class="menuname">양파튀김</p>
-                    <div class="price">
-                        <p>+2,000</p>
+                    <div>
+                        <img src="메뉴/zerocoke.jpg">
+                        <p class="menuname">제로콜라</p>
+                        <div class="price">
+                            <p>+0</p>
+                        </div>
+                        <button class = "select" data-set="zerocoke">선택하기</button>
                     </div>
-                    <button class = "select" type = "button" onclick="location.href='payment.html'">선택하기</button>
-                </div>
-                <div><!--김말이-->
-                    <img src="메뉴/김말이.png">
-                    <p class="menuname">김말이튀김</p>
-                    <div class="price">
-                        <p>+2,000</p>
+                    <div>
+                        <img src="메뉴/sprite.jpg">
+                        <p class="menuname">스프라이트</p>
+                        <div class="price">
+                            <p>+0</p>
+                        </div>
+                        <button class = "select" data-set = "sprite">선택하기</button>
                     </div>
-                    <button class = "select" type = "button" onclick="location.href='payment.html'">선택하기</button>
-                </div>
-                <div><!--맥주-->
-                    <img src="메뉴/beer.png">
-                    <p class="menuname">맥주</p>
-                    <div class="price">
-                        <p>+2,500</p>
+                    <div>
+                        <img src="메뉴/beer.png">
+                        <p class="menuname">맥주</p>
+                        <div class="price">
+                            <p>+1,000</p>
+                        </div>
+                        <button class = "select" data-set = "beer">선택하기</button>
                     </div>
-                    <button class = "select" type = "button" onclick="location.href='payment.html'">선택하기</button>
-                </div>
-                <div><!--카프리-->
-                    <img src="메뉴/cafri.png">
-                    <p class="menuname">카프리</p>
-                    <div class="price">
-                        <p>+3,000</p>
+                    <div>
+                        <img src="메뉴/cafri.png">
+                        <p class="menuname">카프리</p>
+                        <div class="price">
+                            <p>+2,000</p>
+                        </div>
+                        <button class = "select" data-set = "cafri">선택하기</button>
                     </div>
-                    <button class = "select" type = "button" onclick="location.href='payment.html'">선택하기</button>
-                </div>
-                <div><!--버드와이저-->
-                    <img src="메뉴/budweiser.png">
-                    <p class="menuname">버드와이저</p>
-                    <div class="price">
-                        <p>+3,500</p>
+                    <div>
+                        <img src="메뉴/budweiser.png">
+                        <p class="menuname">버드와이저</p>
+                        <div class="price">
+                            <p>+2,500</p>
+                        </div>
+                        <button class = "select" data-set = "budweiser">선택하기</button>
                     </div>
-                    <button class = "select" type = "button" onclick="location.href='payment.html'">선택하기</button>
                 </div>
             </div>
         </div>
@@ -112,4 +114,6 @@
             </div>
         </footer>
     </body>
+    <script src="js/order.js"></script>
+    <script src ="js/order_widget.js"></script>
 </html>

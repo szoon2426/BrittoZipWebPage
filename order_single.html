@@ -22,11 +22,19 @@
         </nav>
     </header>
         <!--메뉴소개-->
-        <div id="menuintro"><b>세트 선택</b></div>
+        <div id="menuintro">
+            <b>고기 선택</b>
+        </div>
         <div class="widget-section">
             <div class="widget-container">
                 <!-- 1번 슬롯 (왼쪽) -->
                 <div class="widget-slot">
+                <div class="widget">
+                    <button id="back">뒤로가기</button>
+                    <a href='payment.html'>
+                    <img id="shopping_list" src="로고/cart.png" alt="장바구니">
+                    </a>
+                </div>
                 </div>
                 <!-- 2번 슬롯 (중앙) -->
                 <div class="widget-slot"></div>
@@ -35,32 +43,55 @@
             </div>
         </div>
         <div id="menu">
-            <div class = "tag" id="set"><!--세트메뉴 -->
+            <div class = "tag" id="single"><!--고기선택-->
                 <div class="menu-container">
-                    <div><!--단품메뉴-->
+                    <div><!--소고기-->
                         <img src="메뉴/single.png">
-                        <p class="menuname">단품 부리또</p>
+                        <p class="menuname">소고기</p>
                         <div class="price">
-                            <p>3,500</p>
+                            <p>+500</p>
                         </div>
-                        <button class = "select" data-set = "single">선택하기</button>
+                        <button class = "select" data-set="beef">선택하기</button>
                     </div>
-                    <div><!--음료 세트-->
-                        <img src="메뉴/drink.png">
-                        <p class="menuname">음료세트</p>
+                    <div><!--닭고기-->
+                        <img src="메뉴/single.png">
+                        <p class="menuname">닭고기</p>
                         <div class="price">
-                            <p>4,200</p>
+                            <p>+0</p>
                         </div>
-                        <button class = "select" data-set="drink">선택하기</button>
+                        <button class = "select" data-set="chicken">선택하기</button>
                     </div>
-                    <div><!--튀김세트-->
-                        <img src="메뉴/fry.png">
-                        <p class="menuname">튀김세트
-                        </p>
+                    <div><!--믹스고기-->
+                        <img src="메뉴/single.png">
+                        <p class="menuname">믹스고기</p>
                         <div class="price">
-                            <p>6,000</p>
+                            <p>+0</p>
                         </div>
-                        <button class = "select" data-set="fry">선택하기</button>
+                        <button class = "select" data-set = "mix">선택하기</button>
+                    </div>
+                    <div><!--닭갈비-->
+                        <img src="메뉴/single.png">
+                        <p class="menuname">닭갈비</p>
+                        <div class="price">
+                            <p>+500</p>
+                        </div>
+                        <button class = "select" data-set = "spicyChicken">선택하기</button>
+                    </div>
+                    <div><!--돈가스-->
+                        <img src="메뉴/single.png">
+                        <p class="menuname">돈가스</p>
+                        <div class="price">
+                            <p>+1,000</p>
+                        </div>
+                        <button class = "select" data-set = "cutlet">선택하기</button>
+                    </div>
+                    <div><!--치킨텐더더-->
+                        <img src="메뉴/single.png">
+                        <p class="menuname">치킨텐더</p>
+                        <div class="price">
+                            <p>+1,000</p>
+                        </div>
+                        <button class = "select" data-set = "tender">선택하기</button>
                     </div>
                 </div>
             </div>
@@ -83,5 +114,6 @@
             </div>
         </footer>
     </body>
-    <script src = "js/order.js"></script>
+    <script src="js/order.js"></script>
+    <script src ="js/order_widget.js"></script>
 </html>
