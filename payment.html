@@ -30,7 +30,8 @@
                 <!-- 1번 슬롯 (왼쪽) -->
                 <div class="widget-slot">
                     <div class="widget">
-                        <button class = "home" type="button" onclick="location.href = 'order_set.html'">처음으로</button>
+                        <button id="back">뒤로가기</button>
+                        <button id = "home">처음으로</button>
                     </div>
                 </div>
                 <!-- 2번 슬롯 (중앙) -->
@@ -40,11 +41,11 @@
             </div>
         </div>
         <div id="payment-container">
-            <div id = "payment">
-                <img src="메뉴/음료세트.png">
-                <p class="menuname">음료세트 X 닭고기 X 양파튀김</p>
-                <div class="price">
-                    <p>6,200원</p>
+            <div class = "tag" id = "payment">
+                <img>
+                <p id="menuname"></p>
+                <div id="price">
+                    <p></p>
                 </div>
                 <button class = "select" type = "button" onclick="location.href='main.html'">결제하기</button>
             </div>
@@ -67,4 +68,6 @@
             </div>
         </footer>
     </body>
+    <script src = "js/payment.js"></script>
+    <script src = "js/payment_widget.js"></script>
 </html>
