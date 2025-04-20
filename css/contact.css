@@ -6,37 +6,115 @@
   justify-content: center;
 }
 
+.contact-page .input_table {
+  width: 100%;
+  max-width: 800px;
+  min-width: 600px;
+  border-spacing: 10px;
+}
+
 .contact-page .name_input {
   text-align: left;
 }
 
-.contact-page .input_name,
-.contact-page .input_phoneNum,
-.contact-page .input_email,
-.contact-page .input_email_domain,
-.contact-page .input_title {
-  width: 100%;
+.contact-page .input_name{
+  width: 96%;
   height: 25px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
 }
 
-.contact-page .input_email {
-  width: 332px;
+.contact-page .input_phoneNum{
+  width: 96%;
+  height: 25px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
 }
 
-.contact-page .input_email_domain {
-  width: 299px;
+.contact-page .email_container{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%
+}
+.contact-page .input_email,
+.contact-page .input_email_domain{
+  width:35%;
+  height: 25px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+}
+.contact-page .separator{
+  width:0%;
+}
+.contact-page .email_select {
+  width: 18%;
+  height: 45px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+  appearance: none;
+  text-align: center;
+}
+
+.contact-page .input_title{
+  width: 96%;
+  height: 25px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
 }
 
 .contact-page .input_content {
   vertical-align: top;
-  width: 100%;
+  width: 96%;
   height: 503px;
   letter-spacing: 1.5px;
-  resize: none; /* 사용자가 크기 조절 못 하게 하려면 이 줄 추가 */
-  padding: 10px; /* 텍스트가 너무 바짝 붙지 않게 */
-  line-height: 1.2;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+  resize: none
 }
 
 .contact-page .submit_button_design {
-  width: 1000px;
+  display: block;
+  color: black;
+  width: 50%;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  font-size: x-large;
+  border-radius: 20px;
+  outline: none;
+  font-weight: bold;
+}
+.file_intro{
+  margin-top: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.contact-page :focus{
+  border-color: #f5583c;
 }
