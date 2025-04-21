@@ -38,7 +38,7 @@ window.onload= function(){
   ment = ment.substring(0,ment.length-3);
 
   document.querySelector("#menuname").innerText = ment;
-  document.querySelector("#price p").innerText = `${price.toLocaleString()}원`;
+  document.querySelector("#price p").innerText = `총 ${price.toLocaleString()}원`;
 
   document.querySelector("#payment img").src = `메뉴/${sessionStorage.getItem("setType")}.png`;
 }

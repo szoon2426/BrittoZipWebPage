@@ -21,7 +21,7 @@
             <a href="menu.html">메뉴</a>
             <a href="about.html" class="nav-title">BURRITO <span>ZIP</span></a>
             <a href="order_set.html">주문</a>
-            <a href="notice.html">고객문의</a>
+            <a href="contact.html">고객문의</a>
         </nav>
     </header>
 
@@ -80,66 +80,15 @@
                     </h6>
                 </td>
             </tr>
-            <!--공개여부-->
-            <tr>
-                <th scope="row">공개 여부</th>
-                <td>
-                    <input id="publicPost" type="radio" name="postRange" value="pubPost">
-                    <label for="publicPost">공개</label>
-                    <input id="privatePost" type="radio" name="postRange" value="priPost">
-                    <label for="privatePost">비공개</label>
-                </td>
-            </tr>
-
-            <!--비공개 시 비밀번호 설정-->
-            <tr id='passwordRow' style="display: none;">
-                <th scope="row">비밀번호</th>
-                <td>
-                    <input type="password" class="input_password" placeholder="비밀번호 4자리를 입력해주세요." maxlength="4"/>
-                </td>
-            </tr>
             <tr>
                 <th scope="row"></th>
                 <td>
                     <div>
-                        <a href="main.html"><button class="submit_button_design">보내기</button></a>
+                        <button class="submit_button_design">보내기</button></a>
                     </div>
                 </td>
             </tr>
         </table>
-        <!--공개/비공개 기능-->
-        <script>
-            //비공개 선택시 비밀번호 입력 창 등장하도록 하는 기능
-            const postRadios = document.querySelectorAll('input[name="postRange"]');
-            const passwordRow = document.getElementById('passwordRow');
-
-            postRadios.forEach((radio) => {
-                radio.addEventListener('change',function(){
-                    if(this.value === 'priPost'){
-                        passwordRow.style.display= 'table-row';
-                    }
-                    else{
-                        passwordRow.style.display='none';
-                    }
-                });
-            });
-
-            //이메일 도메인 선택시 input 입력창에 해당 도메인 입력 기능
-            const emailSelect = document.querySelector(".email_select");
-            const inputEmailDomain = document.querySelector(".input_email_domain");
-
-            emailSelect.addEventListener('change', function (){
-                const domainSelected = emailSelect.value;
-                if(domainSelected === "custom"){
-                    inputEmailDomain.value = "";
-                    inputEmailDomain.readOnly = false; //수정할 수 있게 함
-                }
-                else if(domainSelected){
-                    inputEmailDomain.value = domainSelected;
-                    inputEmailDomain.readOnly = true; //수정 못하게 함
-                }
-            });
-        </script>
     </div>
 
     <footer>
@@ -160,4 +109,5 @@
         </div>
     </footer>
 </body>
+<script src = "js/contact.js"></script>
 </html>

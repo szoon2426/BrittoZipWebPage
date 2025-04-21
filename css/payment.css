@@ -46,7 +46,6 @@
   height : 50px;
 }
 
-/* 뒤로가기 버튼 (페이지 기준 위치) */
 #back {
   margin-top:5px;
   width: 35px;
@@ -87,6 +86,7 @@
   width: 400px;
   text-align: center;
   border-radius: 16px;
+  margin-bottom: 60px;
 }
 
 #payment img {
@@ -98,10 +98,6 @@
 
 /* 메뉴 이름 */
 #menuname {
-  position: inherit;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-20%);
   font-weight: 700;
   font-size: 23px;
   line-height: 120%;
@@ -109,34 +105,37 @@
   color: #424242;
 }
 
-/* 가격 박스 */
-#price {
-  position: inherit;
-  top: 50%;
-  left: 0%;
-  transform: translate(80%, -49%);
-  background-color: #F1722833;
-  color: #F17228;
-  border-radius: 5px;
-  width: 100px;
-  height: 42px;
+.price_and_select{
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 25px;
+}
+
+/* 가격 박스 */
+#price {
+  background-color: #F1722833;
+  color: #F17228;
+  border-radius: 5px;
+  width: 110px;
+  height: 42px;
 }
 
 #price p {
+  display: flex;
   font-size: 20px;
   font-weight: bold;
   margin: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height:100%;
 }
 
 /* 선택 버튼 */
 #select {
-  position: inherit;
-  top: 0%;
-  left: 0%;
-  transform: translate(60%, -150%);
+  width: 110px;
+  height: 42px;
   font-size: 20px;
   font-weight: bold;
   padding: 8px 16px;
@@ -145,9 +144,13 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 #select:hover {
-  background-color: #E0353533;
-  color: #E03535;
+  background-color: #30C65C;
+  color: #F0F0F0;
 }
