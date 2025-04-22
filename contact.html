@@ -8,6 +8,7 @@
 </head>
 
 <body class="contact-page">
+    <!--메뉴 바 -->
     <header>
         <!-- Logo Section -->
         <a href="main.html">
@@ -26,25 +27,27 @@
     </header>
 
     <div class="submit_container">
+        <!-- 입력창 정렬을 위해 table 테그 사용 -->
         <table class="input_table">
             <tr>
-                <!-- 이름 -->
+                <!-- 이름 입력 -->
                 <th scope="row">이름</th>
                 <td><input type="text" class="input_name" placeholder="이름을 입력해주세요." maxlength="20" /></td>
             </tr>
             <tr>
-                <!-- 연락처 -->
+                <!-- 연락처 입력 -->
                 <th scope="row">연락처</th>
                 <td><input type="text" class="input_phoneNum" placeholder="연락처를 입력해주세요." maxlength="20" /></td>
             </tr>
             <tr>
-                <!-- 이메일 -->
+                <!-- 이메일 입력-->
                 <div class = "email_container">
                     <th scope="row">이메일</th>
                     <td>
                         <input type="text" class="input_email" placeholder="이메일을 입력해주세요." maxlength="18" />
                         <span class="separator">@</span>
                         <input type="text" class="input_email_domain" placeholder="이메일 도메인" maxlength="18" />
+                        <!-- select 테그를 사용해서 이메일 도메인 선택 기능 추가 -->
                         <select class="email_select" title="이메일 도메인 주소 선택">
                             <option value="">-선택-</option>
                             <option value="naver.com">naver.com</option>
@@ -59,13 +62,15 @@
                     </td>
                 </div>
             </tr>
+            <!-- 제목 입력-->
             <tr>
-                <!-- 제목 -->
                 <th scope="row">제목</th>
                 <td><input type="text" class="input_title" placeholder="제목을 입력해주세요." /></td>
             </tr>
+            <!-- 내용 입력 -->
             <tr>
                 <th scope="row" style="vertical-align: top">내용</th>
+                <!-- input 대신 여러 줄을 입력할 수 있는 textarea 테그 사용 -->
                 <td><textarea class="input_content" placeholder="내용을 입력하세요"></textarea></td>
             </tr>
             <tr>
@@ -76,21 +81,23 @@
                     <h6 class = "file_intro">
                         첨부된 지원 파일 형식: JPG, PNG, PDF 등<br/>
                         최대 파일 크기: 10MB<br/>
-                        첨부된 파일은 주문 확인 및 처리를 위해서만 사용되며, 안전하게 보호됩니다.
+                        첨부된 파일은 문의 확인 및 처리를 위해서만 사용되며, 안전하게 보호됩니다.
                     </h6>
                 </td>
             </tr>
+            <!-- 제출 버튼 -->
             <tr>
                 <th scope="row"></th>
                 <td>
                     <div>
-                        <button class="submit_button_design">보내기</button></a>
+                        <button class="submit_button_design">보내기</button>
                     </div>
                 </td>
             </tr>
         </table>
     </div>
 
+    <!-- 하단 메뉴바 -->
     <footer>
         <div class="info">
             <div class="footer-title">BURRITO <span>ZIP</span></div>
