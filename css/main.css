@@ -2,7 +2,7 @@
 .main_view {
   position: relative;
   margin-top: 125px;
-  height: calc(100vh - 164px - 125px); /* 전체 높이에서 header/nav/footer 제외한 남은 공간 */
+  height: calc(100vh - 164px - 125px); /* 전체 높이에서 header/footer 제외한 남은 공간 */
   overflow: hidden;
 }
 
@@ -49,4 +49,68 @@
 
 .main_text button:hover {
   background-color: black;
+}
+
+/*슬라이드 속성*/
+.slide-popup {
+  display: none;
+  position: fixed;
+  top: 48.5%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.85);
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  z-index: 1000;
+  text-align: center;
+}
+
+.slide-popup img {
+  width: 300px;
+  height: 330px;
+  display: none;
+  border-radius: 10px;
+}
+
+.slide-popup img.active {
+  display: inline-block;
+}
+
+.slide-popup button {
+  margin: 10px 5px;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.slide-popup .close-btn { 
+  background: none;
+  color: white;
+  position: absolute;
+  margin: 2px 2px;
+  padding: 2px 4px;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+.btn-group{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.prev-btn,
+.next-btn {
+  background: none;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
