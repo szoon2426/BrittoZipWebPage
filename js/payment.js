@@ -38,8 +38,13 @@ window.onload= function(){
   ment = ment.substring(0,ment.length-3);
 
   document.querySelector("#menuname").innerText = ment;
-  document.querySelector("#price p").innerText = `${price.toLocaleString()}원`;
+  document.querySelector("#price p").innerText = `총 ${price.toLocaleString()}원`;
 
   document.querySelector("#payment img").src = `메뉴/${sessionStorage.getItem("setType")}.png`;
 }
 
+document.getElementById("select").addEventListener("click",()=>{
+  alert("결제창으로 이동하는중 ...");
+  alert("결제되었습니다!\n메인페이지로 이동합니다.");
+  window.location.href = "main.html";
+})

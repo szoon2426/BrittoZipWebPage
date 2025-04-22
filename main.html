@@ -17,16 +17,31 @@
       <a href="menu.html">메뉴</a>
       <a href="about.html" class="nav-title">BURRITO <span>ZIP</span></a>
       <a href="order_set.html">주문</a>
-      <a href="notice.html">고객문의</a>
+      <a href="contact.html">고객문의</a>
     </nav>
   </header>
+
+  <div class="slide-popup" id="slidePopup">
+    <button class="close-btn" id="closeSliderBtn">X</button>
+    <img class="slide-img active" src="메뉴/review_1.jpg" alt="1">
+    <img class="slide-img" src="메뉴/review_2.jpg" alt="2">
+    <img class="slide-img" src="메뉴/review_3.jpg" alt="3">
+    <img class="slide-img" src="메뉴/review_4.jpg" alt="4">
+    <img class="slide-img" src="메뉴/review_5.jpg" alt="5">
+    <br>
+    <button class="prev-btn">〈</button>
+    <button class="next-btn">〉</button>
+  </div>
 
   <div class="main_view">
     <img src="로고/main_britto.png" alt="부리또">
     <div class="main_text">
-      <h1>정통 멕시칸 스타일을 기반으로 한 신선하고 든든한 한 끼를 제공합니다.</h1>
+      <h1>정통 멕시칸 스타일을 기반으로 한 신선하고 든든한 한 끼를 <br/> 제공합니다.</h1>
       <p>부드러운 또르띠야 안에 각종 신선한 채소와 매콤한 소스, 육즙 가득한 고기 또는 담백한 채식 재료를 가득 채워 한 입 베어물면 멕시코의 향기가 입안에 퍼집니다.</p>
-      <button type = "button" onclick = "location.href = 'order_set.html'" >주문하기</button>
+      <div class="btn-group">
+        <button type="button" onclick="location.href='order_set.html'">주문하기</button>
+        <button id="showSliderBtn">리뷰보기</button>
+      </div>
     </div>
   </div>
 
@@ -46,6 +61,7 @@
         <img src="로고/diningcode.jpg" alt="DiningCode Logo">
       </a>
     </div>
-  </footer>    
+  </footer>
+  <script src="js/main.js"></script>  
 </body>
 </html>

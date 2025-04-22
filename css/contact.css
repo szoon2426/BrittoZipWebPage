@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .contact-page .input_table {
@@ -15,6 +16,16 @@
 
 .contact-page .name_input {
   text-align: left;
+}
+
+.contact-page .input_password{
+  width: 96%;
+  height: 25px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
 }
 
 .contact-page .input_name{
