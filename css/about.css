@@ -1,74 +1,76 @@
+/* 🔷 메인 영역 배경 스타일 */
 .about-page main {
-  background-image: url('../로고/BackGround.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 60px 20px;
+  background-image: url('../로고/BackGround.png');  /* 배경 이미지 */
+  background-size: cover;                          /* 화면에 맞게 꽉 채움 */
+  background-position: center;                     /* 가운데 정렬 */
+  background-repeat: no-repeat;                    /* 반복 없음 */
+  padding: 60px 20px;                              /* 상하좌우 여백 */
 }
 
+/* 🔷 상단 소개 문구 영역 */
 .page-intro {
-  text-align: center;
-  margin-top: 100px;
+  text-align: center;      /* 가운데 정렬 */
+  margin-top: 100px;       /* 위쪽 여백 */
 }
 
 .page-intro h1 {
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 1.6;
+  font-size: 26px;         /* 글자 크기 */
+  font-weight: bold;       /* 굵은 글씨 */
+  line-height: 1.6;        /* 줄 간격 */
 }
 
 .page-intro .highlight {
-  color: red;
-  font-weight: bold;
+  color: red;              /* 강조 색상 */
+  font-weight: bold;       /* 굵게 표시 */
 }
 
-/* 원하는 레이아웃: 사진 + 텍스트 두 칸 */
+/* 🔷 메인 레이아웃: 이미지 + 텍스트 2단 구조 */
 .flex-layout {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 60px;
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 0 20px;
+  display: flex;                  /* 가로 배치 */
+  justify-content: center;       /* 가운데 정렬 */
+  align-items: flex-start;       /* 위쪽 정렬 */
+  gap: 60px;                      /* 요소 간 간격 */
+  max-width: 1200px;             /* 최대 가로 길이 */
+  margin: 60px auto;             /* 세로 여백 + 가운데 정렬 */
+  padding: 0 20px;               /* 좌우 여백 */
 }
 
-/* 왼쪽 이미지 */
+/* 🔷 왼쪽: 이미지 영역 */
 .image-container {
-  flex: 1;
+  flex: 1;                        /* 비율 1:1 */
   display: flex;
   justify-content: center;
 }
 
 .image-container img {
-  width: 100%;
-  max-width: 600px;
-  height: 650px;
-  border-radius: 20px;
-  border: 6px solid red;
+  width: 100%;                   /* 부모 영역 기준 100% */
+  max-width: 600px;              /* 최대 가로 600px */
+  height: 650px;                 /* 고정 높이 */
+  border-radius: 20px;           /* 둥근 모서리 */
+  border: 6px solid red;         /* 빨간 테두리 */
 }
 
-/* 오른쪽 텍스트 박스 2개 세로로 */
+/* 🔷 오른쪽: 텍스트 박스 두 개 수직 배치 */
 .text-column {
-  flex: 1;
+  flex: 1;                       /* 이미지와 동일한 비율 */
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+  flex-direction: column;       /* 세로로 배치 */
+  gap: 30px;                    /* 박스 간 간격 */
 }
 
-/* 흰색 박스 스타일 */
+/* 🔷 공통 박스 스타일 (배경 흰색 + 그림자) */
 .white-box {
-  background-color: white;
-  padding: 25px 24px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background-color: white;       /* 흰 배경 */
+  padding: 25px 24px;            /* 내부 여백 */
+  border-radius: 12px;           /* 둥근 테두리 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* 그림자 */
 }
 
-/* 텍스트 스타일 */
+/* 🔷 텍스트 컨텐츠 공통 스타일 */
 .text-content {
   font-size: 15px;
   line-height: 1.8;
-  color: #333;
+  color: #333;                   /* 진한 회색 텍스트 */
 }
 
 .text-content h3 {
@@ -76,22 +78,23 @@
   font-weight: bold;
 }
 
+/* 🔷 강조 텍스트 스타일 */
 .highlight {
   color: red;
   font-weight: bold;
 }
 
-/* 제휴 이미지 호버 */
+/* 🔷 제휴 정보: 마우스 올리면 이미지 보이는 효과 */
 .partnership-info {
   position: relative;
   cursor: pointer;
   color: red;
   font-weight: bold;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease; /* 색상 변경 부드럽게 */
 }
 
 .partnership-info:hover {
-  color: darkred;
+  color: darkred;               /* hover 시 더 진한 빨강 */
 }
 
 .hint-text {
@@ -100,19 +103,20 @@
   margin-left: 5px;
 }
 
+/* 🔷 제휴 이미지: 기본 숨김 + hover 시 노출 */
 .partnership-info img {
   display: none;
   position: absolute;
-  top: 130%;
+  top: 130%;                    /* 텍스트 아래에 위치 */
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); /* 가운데 정렬 */
   width: 300px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);  /* 그림자 */
   z-index: 100;
   transition: opacity 0.3s ease;
 }
 
 .partnership-info:hover img {
-  display: block;
+  display: block;              /* hover 시 이미지 보여줌 */
 }
